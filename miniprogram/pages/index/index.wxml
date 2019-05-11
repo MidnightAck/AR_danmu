@@ -1,0 +1,35 @@
+
+<!--index.wxml-->
+<view class='brief'>
+  <image src='../../images/index/show.gif'></image>
+</view>
+<view class="doommview">
+  <!-- 加载所有用户祝福 -->
+  <block wx:for="{{doommData}}" wx:key="id">
+    <view wx:if="{{item.display}}" class="aon" style="animation: first {{item.time}}s linear forwards;top:{{item.top}}%;color:#000;font-size:30rpx;">
+       <!--index.wxml-<image src='9logo.png' class='avatarUrl1' ></image> -->
+       <image src='{{item.avatarUrl}}' class='avatarUrl' ></image>
+      <text style='display:inline-block'>
+            {{item.text}}
+        </text>
+    </view>
+  </block>
+  <!-- 用户发送祝福实时显示 -->
+  <block wx:for="{{usrdoommData}}" wx:key="id">
+    <view wx:if="{{item.display}}" class="aon" style="animation: first {{item.time}}s linear forwards;top:{{item.top}}%;color:#fff;font-size:30rpx;">
+       <image src='9logo.png' class='avatarUrl1' ></image>
+       <image src='{{item.avatarUrl}}' class='avatarUrl' ></image>
+      <text class='text' style='display:inline-block'>
+            {{item.text}}
+        </text>
+    </view>
+  </block>
+</view>
+<view class="weui-flex button">
+  <view class="weui-flex__item">
+    <view class="">
+      <input class="weui-input placeholder" type='text' confirm-type='send' placeholder="{{placeholderinfo}}" name="xieban" bindconfirm="bindbt" hidden='{{!GotUserInfohidden}}' value='{{danmuzhi}}'/>
+      <button class="weui-btn btn" type="primary" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" hidden='{{GotUserInfohidden}}'>登陆</button>
+    </view>
+  </view>
+</view>

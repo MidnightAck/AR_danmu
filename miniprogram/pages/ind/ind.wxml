@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class='brief'>
+<image src='../../images/index/index.png'></image>
+<view class="btn-area recognition">
+      <button type="primary" bindtap="goRecognition">识别体验</button>
+  </view>
+</view>
+

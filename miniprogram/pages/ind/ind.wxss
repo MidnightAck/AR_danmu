@@ -1,0 +1,39 @@
+/**index.wxss**/
+.brief{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 0rpx;
+}
+
+.brief image{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.brief text{
+  font-size:18px;
+  font-weight: bold;
+  color: gray
+}
+
+
+.index-container{
+  position: absolute;
+  background-color: #ffffff;
+}
+.btn-area{
+  position: absolute;
+  right: 20px;
+  left: 20px; 
+
+}
+.recognition{
+  bottom: 40rpx;
+  
+}
+.direct{
+  top: 10vh;
+}

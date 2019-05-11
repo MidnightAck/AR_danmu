@@ -1,0 +1,13 @@
+<camera device-position="back"  flash="off" binderror="error" style="width: 100%; height: 100%"></camera>
+
+<view class='recognition-container'>
+  <view class="btn-area">
+      <button type="primary" bindtap="takePhoto">{{msg}}</button>
+  </view>
+  <canvas style="width: {{width}}px; height: {{height}}px; opacity: 0" canvas-id="firstCanvas"></canvas>
+</view>
+
+<!-- <view class='show'>
+  <image mode='widthFix' src='show.gif'></image>
+</view> -->
+

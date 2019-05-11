@@ -1,0 +1,89 @@
+/**index.wxss**/
+page{
+  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+}
+.button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.brief{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 0rpx;
+}
+
+.brief image{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.text {
+    font-size: 34rpx;
+    color: #000;
+    font-weight: 900;
+}
+
+.aon {
+  position: absolute;
+  white-space: nowrap; /* 防止向下换行*/
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+}
+
+.avatarUrl {
+  position: relative;
+  top: 20rpx;
+  right: 20rpx;
+  height: 55rpx;
+  width: 55rpx;
+  border-radius: 50%;
+  border:3.5rpx solid #b81c22;
+}
+
+.avatarUrl1 {
+  position: relative;
+  top: 20rpx;
+  right: 20rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.doommview {
+  z-index: 3;
+  height: 70%;
+  width: 100%;
+  position: absolute;
+}
+
+@keyframes first {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -500%;
+  }
+}
+
+.placeholder {
+  margin: 10px;
+  padding: 0 10px;
+  text-align: left;
+  background-color: #fff;
+  height: 80rpx;
+  line-height: 40rpx;
+  color: #b81c22;
+  border-radius: 5rpx;
+  box-shadow:3rpx 5rpx 20rpx #B3B3B3;
+}
+
+.btn {
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 10px;
+  padding: 0 10px;
+}
